@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+info:
+  description: "base-microservice-slim with spring boot and java 11"
+  author: "Taras Bulubas"
+  docker-image: "tbulubas/base-microservice-slim"
+  github:
+    http: "https://github.com/tbulubas/bases-microservice-slim.git"
+    ssh: "git@github.com:tbulubas/bases-microservice-slim.git"
+    cli: "gh repo clone tbulubas/bases-microservice-slim"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
